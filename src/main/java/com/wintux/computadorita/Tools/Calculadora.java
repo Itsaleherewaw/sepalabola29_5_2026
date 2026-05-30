@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Calculadora {
 
-    // Este es el método exacto que mostró el profe en la videollamada
+    
     public static String resolverExpresionPostfix(String postfix) {
         Stack<Integer> pila = new Stack<>();
         String[] tokens = postfix.split(" ");
@@ -34,7 +34,7 @@ public class Calculadora {
                 }
                 pila.push(resultadoParcial);
             } 
-            // Si es un número, directo a la pila
+            // Si es un número en si se va directo a la pila
             else {
                 pila.push(Integer.parseInt(token));
             }
